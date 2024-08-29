@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$SHARK - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://www.bing.com/images/create/d090d0b2d0b0d182d0b0d180d0bad0b0-d0b2-d0b2d0b8d0b4d0b5-d0bad0bed0bdd182d183d180d0b0-d0b0d0bad183d0bbd18b-d181d0b4d0b5d0bbd0b0d0bdd0b0-d0b2-d0bcd0b8d0bdd0b8d0bcd0b0d0bbd0b5d181d182/1-66cb030d63754fdeba8c48d8f3e65be3?id=dpDqspd0f5DQ4r0KQwwDvA%3d%3d&view=detailv2&idpp=genimg&thId=OIG1.y6FvDPbrsri1BpzBGtpu&skey=sK7Gx52AWJzQmpJcl7mAviv_jQYzJ5RCYhccZ44vzFA&FORM=GCRIDP&mode=overlay" alt="$SHARK Logo" class="logo">
+            <h1>Welcome to $SHARK Dashboard</h1>
+        </header>
+        <section class="balance">
+            <h2>Your Balance</h2>
+            <p id="balance">Loading...</p>
+        </section>
+        <section class="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard">
+                <li>Loading...</li>
+            </ul>
+        </section>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
